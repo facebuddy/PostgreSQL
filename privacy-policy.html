@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for the PostgreSQL Manager Android application.">
+  <title>Privacy Policy | PostgreSQL Manager</title>
+  <style>
+    :root { color-scheme: light dark; --bg:#f6f8fb; --card:#fff; --text:#172033; --muted:#5e687b; --accent:#336791; --border:#dfe5ec; }
+    @media (prefers-color-scheme:dark) { :root { --bg:#10151d; --card:#171e28; --text:#edf2f7; --muted:#aeb8c6; --accent:#8fc5ed; --border:#2e3948; } }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font:16px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; }
+    main { width:min(900px,calc(100% - 32px)); margin:40px auto; padding:clamp(24px,5vw,56px); background:var(--card); border:1px solid var(--border); border-radius:18px; box-shadow:0 10px 35px rgba(0,0,0,.08); }
+    h1 { margin:0 0 8px; font-size:clamp(2rem,5vw,3rem); line-height:1.15; }
+    h2 { margin:2.2rem 0 .6rem; color:var(--accent); font-size:1.35rem; line-height:1.3; }
+    p, li { max-width:75ch; }
+    ul { padding-left:1.3rem; }
+    .dates { margin:0 0 2rem; color:var(--muted); }
+    .summary { padding:16px 20px; border-left:4px solid var(--accent); background:color-mix(in srgb,var(--accent) 8%,transparent); border-radius:4px 10px 10px 4px; }
+    .placeholder { color:#b42318; font-weight:700; }
+    @media (prefers-color-scheme:dark) { .placeholder { color:#ffaaa2; } }
+    footer { margin-top:3rem; padding-top:1.2rem; border-top:1px solid var(--border); color:var(--muted); font-size:.9rem; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Privacy Policy for PostgreSQL Manager</h1>
+    <p class="dates"><strong>Effective date:</strong> August 28, 2026<br><strong>Last updated:</strong> August 28, 2026</p>
+  </header>
+
+  <p>PostgreSQL Manager (the <strong>“App”</strong>) is provided by <strong>CodemanAcademy.com</strong> (“we,” “us,” or “our”). This Privacy Policy explains how the App accesses, uses, stores, transmits, and protects information.</p>
+
+  <section>
+    <h2>Summary</h2>
+    <div class="summary">
+      <p>PostgreSQL Manager is a database administration tool that runs on your Android device. We do not operate a backend service for the App and do not receive your database credentials, SQL queries, database contents, or usage information. The App does not contain advertising, analytics, or crash-reporting SDKs.</p>
+      <p>The App connects directly from your device to PostgreSQL servers that you choose. Information sent to those servers is handled by you and the server owner or operator, not by us.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Information the App accesses and stores</h2>
+    <p>To provide its features, the App may process and store the following information locally on your device:</p>
+    <ul>
+      <li>PostgreSQL connection information, including a connection name, server hostname or IP address, port, database name, username, password, SSL preference, and timeout setting.</li>
+      <li>SQL editor content, saved editor tabs, query history, execution timestamps, execution duration, success status, favorites, and database error messages.</li>
+      <li>Database metadata and query results retrieved from PostgreSQL servers you connect to, such as database, schema, table, column, role, and server-status information.</li>
+      <li>Data stored in PostgreSQL databases created and operated locally by the App on your device.</li>
+      <li>Backup and restore files that you choose to create or open using Android’s system file picker. A logical backup may contain database schemas and the full contents of the selected database.</li>
+    </ul>
+    <p>Passwords saved by the App are encrypted using AES-GCM with a key held in the Android Keystore. Other locally stored preferences, including server addresses, usernames, SQL text, history, and editor state, are stored in the App’s private storage but are not separately encrypted by the App. Android application sandboxing normally prevents other apps from accessing this private storage.</p>
+  </section>
+
+  <section>
+    <h2>Network connections and use of information</h2>
+    <p>The App uses internet and network access only to connect directly to PostgreSQL servers specified by you. When you test a connection, browse a database, run SQL, view server information, create a backup, or restore a backup, the App may transmit the configured hostname or IP address, database name, username, password, SQL statements, and restore data to that PostgreSQL server. The server may return database records, metadata, logs, status details, and error messages to the App.</p>
+    <p>This processing is necessary to provide the database-management features you request. We do not receive this information through any developer-operated server.</p>
+    <p>The App supports PostgreSQL connections with SSL either enabled or disabled. If SSL is disabled, information sent between your device and the database server may travel without transport encryption and could be intercepted. Even when SSL is enabled, the current connection mode encrypts traffic but may not verify the server’s identity. You are responsible for choosing a trusted server and secure network configuration.</p>
+  </section>
+
+  <section>
+    <h2>Information we collect</h2>
+    <p>We do not collect or transmit user information to us or to a developer-operated service. In particular, we do not collect:</p>
+    <ul>
+      <li>names, email addresses, phone numbers, or app account information;</li>
+      <li>advertising identifiers or precise location;</li>
+      <li>analytics, diagnostics, or crash reports; or</li>
+      <li>database credentials, SQL text, query results, or database contents.</li>
+    </ul>
+    <p>The App does not provide or require an app account. Credentials entered in the App are credentials for PostgreSQL servers selected by you, not accounts issued or controlled by us.</p>
+  </section>
+
+  <section>
+    <h2>Sharing of information</h2>
+    <p>We do not sell, rent, or share your information with advertisers, data brokers, analytics providers, or other third parties.</p>
+    <p>Information is disclosed only as directed by you:</p>
+    <ul>
+      <li>to a PostgreSQL server when you initiate or enable a connection to that server; and</li>
+      <li>to a storage provider or location you select through Android’s system file picker when you create, open, copy, or otherwise handle a backup file.</li>
+    </ul>
+    <p>The privacy and security practices of a PostgreSQL server, hosting provider, device manufacturer, Android system component, or storage provider are governed by that party’s policies and by your agreements with them.</p>
+  </section>
+
+  <section>
+    <h2>Permissions</h2>
+    <p>The App requests Android internet and network-state permissions so it can connect to PostgreSQL servers and determine whether a network is available. It does not request access to location, contacts, camera, microphone, phone, SMS, or advertising identifiers. File access for backup and restore is provided through Android’s system file picker and applies only to files or locations you select.</p>
+  </section>
+
+  <section id="data-deletion">
+    <h2>Data retention and deletion</h2>
+    <p>Locally saved connections, encrypted passwords, editor tabs, query history, settings, and embedded database data remain on your device until you delete the relevant item in the App, clear the App’s storage in Android settings, or uninstall the App. Because Android backup is disabled for the App, the App does not request that this private data be included in Android’s application backup system.</p>
+    <p>Backup files remain in the location you selected until you delete them through Android or the applicable storage provider. Removing data from the App does not delete copies already exported as backups or data retained by a PostgreSQL server.</p>
+    <p>Because we do not receive or retain this data on our servers and the App has no app account, we cannot remotely view or delete data stored on your device or on a PostgreSQL server. To delete all App data, use <strong>Android Settings &gt; Apps &gt; PostgreSQL Manager &gt; Storage &gt; Clear storage</strong>, then delete any exported backups separately. Uninstalling the App also deletes its private local data, subject to Android’s behavior.</p>
+  </section>
+
+  <section>
+    <h2>Security</h2>
+    <p>We use safeguards appropriate to the App’s local architecture, including Android private application storage, Android Keystore-backed encryption for saved passwords, and disabled Android application backup. No method of storage or transmission is completely secure. You should use strong, unique database credentials, restrict database network access, keep your device secure, prefer encrypted and identity-verified connections, and protect exported backup files because they may contain sensitive database content.</p>
+  </section>
+
+  <section>
+    <h2>Children’s privacy</h2>
+    <p>The App is a technical database-administration tool and is not directed to children. We do not knowingly collect personal information from children. If you believe a child has provided information to us, contact us using the details below.</p>
+  </section>
+
+  <section>
+    <h2>International use</h2>
+    <p>The App may connect to a database server or storage provider located in another country if you configure or select one. You are responsible for ensuring that your use of the App and any cross-border transfer of database information complies with applicable law and your organization’s policies.</p>
+  </section>
+
+  <section>
+    <h2>Changes to this Privacy Policy</h2>
+    <p>We may update this Privacy Policy to reflect changes to the App, legal requirements, or our practices. We will update the “Last updated” date when changes are made. Material changes will be communicated through the App, its store listing, or another appropriate method where required.</p>
+  </section>
+
+  <section>
+    <h2>Contact us</h2>
+    <p>If you have questions or requests concerning this Privacy Policy, contact:</p>
+    <address>
+      <strong>CodemanAcademy.com</strong><br>
+      Email: <a href="mailto:asibalamin.cse@gmail.com">asibalamin.cse@gmail.com</a>
+    </address>
+  </section>
+
+  <footer>Privacy Policy for PostgreSQL Manager</footer>
+</main>
+</body>
+</html>
